@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mascota de Programación</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>¡Ponle nombre a nuestra mascota!</h1>
+    <p>Ayúdanos a elegir el nombre de la mascota de Programación.</p>
+    <div class="formulario">
+    <h2>¡Propón un nombre!</h2>
+    <p>¿Cómo debería llamarse nuestra mascota?</p>
+
+    
+<form id="formularioNombre">
+
+    <label for="nombreEstudiante">Nombre del estudiante</label>
+    <input
+        type="text"
+        id="nombreEstudiante"
+        placeholder="Escribe tu nombre completo..."
+        maxlength="80"
+        required
+    >
+<div class="fila-curso">
+    <div class="campo-curso">
+    <label for="nivelEstudiante">Nivel</label>
+<select id="nivelEstudiante" required>
+    <option value="">Selecciona tu nivel</option>
+    <option value="1">1° Medio</option>
+    <option value="2">2° Medio</option>
+    <option value="3">3° Medio</option>
+    <option value="4">4° Medio</option>
+</select>
+    </div>
+    <div class="campo-curso">
+    <label for="cursoEstudiante">Letra del curso</label>
+    <select id="cursoEstudiante" required>
+        <option value="">Selecciona tu curso</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="E">E</option>
+        <option value="F">F</option>
+    </select>
+    </div>
+</div>
+    <label for="nombreMascota">Nombre para la mascota</label>
+    <input
+        type="text"
+        id="nombreMascota"
+        placeholder="¿Cómo bautizarías a nuestra mascota?"
+        maxlength="30"
+        required
+    >
+
+    <button type="submit">
+        Enviar propuesta
+    </button>
+
+</form>
+
+</div>
+
+
+<audio id="musicaFondo" loop>
+    <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<button type="button" id="botonMusica">
+    🎵 Activar música
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
